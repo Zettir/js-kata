@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    background-color: deepskyblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+#cookie {
+    background-color: skyblue;
+    display: flex;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0, -200%);
+    transition: transform 2s ease-in;  
+}
+#cookie.slideIn {
+    transform: translate(0, 0);
+}
+#cookie.slideOut {
+    transform: translate(0, -200%);    
+}
+#cookie p {
+    padding: 20px;
+}
+#cookie button {
+    background: none;
+    padding: 20px;
+    border: none;
+}
+#cookie button strong {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 21px 20px 19px;
+    font-size: 20px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+h1 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+#cookieTerms {
+    background: white;
+    align-self: center;
+    padding: 20px;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 2s ease-in;  
+}
+#cookieTerms.comeIn {
+    opacity: 100;    
+}
